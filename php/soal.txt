@@ -1,0 +1,79 @@
+Soal PHP
+
+Soal 1
+Buat program PHP yang menampilkan tulisan: "Belajar PHP itu menyenangkan"
+
+Soal 2
+Buat variabel: nama, kelas, umur
+Lalu tampilkan.
+Output contoh:
+Nama: Andi
+Kelas: XI PPLG
+Umur: 17
+
+Soal 3
+Buat program menghitung penjumlahan dua angka dengan kombinasi html dan php.
+Input:
+$a = 10
+$b = 5
+
+Output:
+Hasil: 15
+
+Soal 4
+Buat program menentukan bilangan genap atau ganjil.
+Contoh:
+angka = 8
+
+Output:
+Genap
+
+Soal 5
+Buat program menentukan lulus atau tidak.
+Ketentuan:
+>=75 Lulus
+<75 Tidak Lulus
+
+Soal 6
+Tampilkan angka 1 sampai 10 menggunakan for.
+Output:
+1
+2
+3
+4
+...
+10
+
+Soal 7
+Buat array berisi:
+HTML
+CSS
+JavaScript
+PHP
+Tampilkan semua menggunakan foreach.
+
+Soal 8
+Buat function bernama: luas_persegi
+Rumus: sisi × sisi
+
+Soal 9
+Buat form input:
+nama
+kelas
+
+Saat submit tampilkan:
+Halo [nama], kelas [kelas]
+
+Soal 10
+Buat program penilaian siswa dengan kombinasi HTML dan PHP.
+
+Input:
+nama
+nilai
+
+Output contoh:
+Nama: Budi
+Nilai: 85
+Status: Lulus
+
+nilai dengan catatan jika dibawah 70 = Remedial, jika diatas 85 Lulus
