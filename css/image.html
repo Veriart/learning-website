@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Membuat halaman responsive di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Image</title>
+
+    <style>
+      /* Mengatur tampilan dasar halaman */
+      body {
+        font-family: Arial, sans-serif; /* Mengganti font default browser */
+        background-color: #f4f4f4; /* Warna latar belakang halaman */
+        padding: 40px; /* Memberi jarak dari tepi layar */
+        text-align: center; /* Membuat semua konten di tengah */
+      }
+
+      /* Mengatur semua gambar */
+      img {
+        width: 200px; /* Mengatur lebar gambar agar seragam */
+        margin: 15px; /* Memberi jarak antar gambar */
+        border-radius: 8px; /* Membuat sudut gambar sedikit melengkung */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Memberi bayangan agar terlihat seperti card */
+      }
+
+      /* Efek saat mouse diarahkan ke gambar */
+      img:hover {
+        transform: scale(1.05); /* Membesarkan gambar sedikit saat hover */
+        transition: 0.3s; /* Membuat animasi perubahan lebih halus */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Gambar dari file yang berada di folder yang sama dengan file HTML -->
+    <img src="LogoMetschoo.png" alt="Logo Metland School Internal File" />
+
+    <!-- Gambar dari folder lain menggunakan relative path -->
+    <img
+      src="./assets/img/LogoMetschoo.png"
+      alt="Logo Metland School Internal File with Relative Path"
+    />
+
+    <!-- Gambar dari website eksternal menggunakan URL -->
+    <img
+      src="https://smkmetland.net/ppdb/wp-content/uploads/2022/11/cropped-cropped-cropped-LOGO-SMK-METLAND2-copy-1024x1024-4.png"
+      alt="Logo Metland School Eksternal File"
+    />
+  </body>
+</html>

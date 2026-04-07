@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Mengatur agar tampilan website responsive di layar HP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form</title>
+
+    <style>
+      /* Mengatur font utama seluruh halaman */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4; /* memberi warna latar belakang halaman */
+        display: flex; /* membuat isi halaman bisa diposisikan ke tengah */
+        justify-content: center; /* posisi horizontal ke tengah */
+        align-items: center; /* posisi vertikal ke tengah */
+        height: 100vh; /* tinggi halaman mengikuti tinggi layar */
+      }
+
+      /* Mengatur tampilan form */
+      form {
+        background: white; /* warna background form */
+        padding: 25px; /* jarak isi form dengan border */
+        border-radius: 8px; /* membuat sudut form sedikit melengkung */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* memberi bayangan agar terlihat seperti card */
+        width: 300px; /* lebar form */
+      }
+
+      /* Mengatur tampilan label */
+      label {
+        font-weight: bold; /* membuat teks label lebih tebal */
+      }
+
+      /* Mengatur tampilan input dan select */
+      input,
+      select {
+        width: 100%; /* membuat input memenuhi lebar form */
+        padding: 8px; /* memberi ruang dalam input */
+        margin-top: 5px; /* jarak dari label */
+        margin-bottom: 15px; /* jarak antar input */
+        border: 1px solid #ccc; /* garis border input */
+        border-radius: 4px; /* sudut input sedikit bulat */
+      }
+
+      /* Mengatur tampilan tombol */
+      button {
+        width: 100%; /* tombol memenuhi lebar form */
+        padding: 10px; /* tinggi tombol */
+        background-color: #007bff; /* warna tombol */
+        color: white; /* warna teks tombol */
+        border: none; /* menghilangkan border default */
+        border-radius: 5px; /* sudut tombol */
+        cursor: pointer; /* mengubah cursor menjadi pointer saat hover */
+      }
+
+      /* Efek saat mouse diarahkan ke tombol */
+      button:hover {
+        background-color: #0056b3; /* warna tombol berubah saat hover */
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!-- Input untuk nama -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+
+      <!-- Input untuk email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+
+      <!-- Dropdown pilihan jurusan -->
+      <label>Jurusan</label>
+      <select>
+        <option>PPLG</option>
+        <option>DKV</option>
+        <option>AKL</option>
+      </select>
+
+      <!-- Tombol submit -->
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Membuat halaman responsive pada perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Video</title>
+
+    <style>
+      /* Mengatur tampilan dasar halaman */
+      body {
+        font-family: Arial, sans-serif; /* Mengganti font default browser */
+        background-color: #f4f4f4; /* Warna latar belakang halaman */
+        padding: 40px; /* Memberi jarak antara konten dan tepi layar */
+        text-align: center; /* Membuat konten berada di tengah halaman */
+      }
+
+      /* Mengatur tampilan video */
+      video {
+        width: 300px; /* Mengatur lebar video */
+        border-radius: 10px; /* Membuat sudut video melengkung */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        /* Memberi efek bayangan agar video terlihat lebih menonjol */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Tag <video> digunakan untuk menampilkan video di halaman web -->
+    <video controls>
+      <!-- 
+        Tag <source> digunakan untuk menentukan sumber file video
+        File bisa berasal dari:
+        1. File lokal dalam project
+        2. File dari internet (URL)
+        -->
+
+      <source src="video.mp4" type="video/mp4" />
+
+      <!-- Pesan ini akan muncul jika browser tidak mendukung video -->
+      Browser tidak mendukung video.
+    </video>
+  </body>
+</html>

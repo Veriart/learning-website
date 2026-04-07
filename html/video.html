@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Membuat halaman responsive di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video</title>
+
+    <style>
+
+        /* Mengatur tampilan dasar halaman */
+        body{
+            font-family: Arial, sans-serif; /* Mengubah font default browser */
+            background-color:#f4f4f4; /* Warna latar belakang halaman */
+            padding:40px; /* Memberi jarak dari tepi layar */
+            text-align:center; /* Membuat konten berada di tengah */
+        }
+
+        /* Mengatur judul setiap bagian */
+        h2{
+            color:#2c3e50; /* Warna teks judul */
+            margin-top:40px; /* Memberi jarak antar section */
+        }
+
+        /* Mengatur tampilan video */
+        video{
+            width:300px; /* Mengatur lebar video */
+            border-radius:10px; /* Membuat sudut video melengkung */
+            box-shadow:0 0 10px rgba(0,0,0,0.2); 
+            /* Memberi bayangan agar terlihat seperti card */
+            margin-top:10px; /* Memberi jarak dari judul */
+        }
+
+        /* Mengatur tampilan iframe (YouTube) */
+        iframe{
+            width:400px; /* Mengatur lebar video */
+            height:225px; /* Mengatur tinggi video */
+            border:none; /* Menghilangkan border default iframe */
+            border-radius:10px; /* Membuat sudut melengkung */
+            box-shadow:0 0 10px rgba(0,0,0,0.2); 
+            /* Memberi bayangan */
+            margin-top:10px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HTML Video</h1>
+
+    <!-- VIDEO BIASA DENGAN CONTROLS -->
+    <h2>Video dengan Controls</h2>
+
+    <video controls>
+
+        <!-- File video dari local project -->
+        <source src="video.mp4" type="video/mp4">
+
+        <!-- Jika browser tidak mendukung video -->
+        Browser tidak mendukung video.
+
+    </video>
+
+
+    <!-- VIDEO AUTOPLAY -->
+    <h2>Video Autoplay</h2>
+
+    <!-- 
+    autoplay = video otomatis diputar
+    muted = diperlukan agar autoplay bisa berjalan di banyak browser
+    loop = video diputar berulang
+    -->
+
+    <video autoplay muted loop>
+
+        <source src="video.mp4" type="video/mp4">
+
+        Browser tidak mendukung video.
+
+    </video>
+
+
+    <!-- VIDEO YOUTUBE (IFRAME) -->
+    <h2>Video dari YouTube (Iframe)</h2>
+
+    <!-- 
+    iframe digunakan untuk menampilkan konten dari website lain
+    biasanya digunakan untuk YouTube, Google Maps, dll
+    -->
+
+    <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        allowfullscreen>
+    </iframe>
+
+</body>
+</html>

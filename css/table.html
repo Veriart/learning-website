@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Membuat tampilan responsive di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Table</title>
+
+    <style>
+      /* Mengatur tampilan dasar halaman */
+      body {
+        font-family: Arial, sans-serif; /* Mengganti font default browser */
+        background-color: #f4f4f4; /* Warna latar belakang halaman */
+        padding: 40px; /* Memberi jarak dari tepi layar */
+      }
+
+      /* Mengatur judul */
+      h2 {
+        color: #2c3e50; /* Warna teks judul */
+      }
+
+      /* Mengatur tabel */
+      table {
+        width: 400px; /* Mengatur lebar tabel */
+        border-collapse: collapse;
+        /* Menggabungkan garis border agar tidak double */
+
+        background: white; /* Warna background tabel */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Memberi efek bayangan agar terlihat seperti card */
+      }
+
+      /* Mengatur header tabel */
+      th {
+        background-color: #3498db; /* Warna latar header */
+        color: white; /* Warna teks header */
+        padding: 10px; /* Memberi ruang dalam cell */
+        text-align: left; /* Posisi teks */
+      }
+
+      /* Mengatur isi tabel */
+      td {
+        padding: 10px; /* Memberi ruang dalam cell */
+        border-bottom: 1px solid #ddd; /* Garis pemisah antar baris */
+      }
+
+      /* Efek saat mouse diarahkan ke baris tabel */
+      tr:hover {
+        background-color: #f1f9ff; /* Warna berubah saat hover */
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>HTML Menengah</h2>
+
+    <h3>Tabel</h3>
+
+    <table>
+      <!-- Bagian header tabel -->
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Kelas</th>
+          <th>Jurusan</th>
+        </tr>
+      </thead>
+
+      <!-- Bagian isi tabel -->
+      <tbody>
+        <tr>
+          <td>Andi</td>
+          <td>XI</td>
+          <td>PPLG</td>
+        </tr>
+
+        <tr>
+          <td>Sinta</td>
+          <td>XII</td>
+          <td>PPLG</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
